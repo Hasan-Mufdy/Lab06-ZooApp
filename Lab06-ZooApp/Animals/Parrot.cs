@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Animals
 {
-    public class Parrot : Bird
+    public class Parrot : Bird, IFly
     {
         public override string Eat()
         {
@@ -21,6 +21,10 @@ namespace Animals
         public override string Fly()
         {
             return "Flies in the air.";
+        }
+        public string flying()
+        {
+            return "Parrot is flying";
         }
     }
 }
