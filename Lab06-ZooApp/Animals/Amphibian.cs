@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Animals
 {
-    public class Amphibian : Reptile
+    public class Amphibian : Reptile, ISwim
     {
         public string SkinType { get; set; }
 
@@ -25,6 +25,11 @@ namespace Animals
         public override string Sleep()
         {
             return "Eats insects and small fish.";
+        }
+
+        public string Swimming()
+        {
+            return "Amphibian is swimming";
         }
     }
 }

@@ -28,3 +28,21 @@ Abstraction is basically hiding complexity, it hides the irrelevant data about a
 Inheritance is very useful, it allows classes to inherit properties and behaviors from other classes, it will reduce code size and make it more organized.
 example used in this project:
 there are 5 types of animals like fish, mammals, ...etc, and each type has some example animals that inherit all the common methods from the Animal class, and the specific methods from the animal type.
+
+## Interface
+
+- Interfaces provide a way to define some set of behaviors that classes implement. They enable code reuse, abstraction, and polymorphism.
+
+### in this app there are 2 new interfaces:
+1. IFly
+2. ISwim
+
+- interface naming convention:
+files are better start with "I" to be more organized.
+
+### examples used in this app:
+
+- Dog implements swimming method from ISwim interface
+- Parrot implements flying method from IFly interface
+- Snake implements methods from both ISwim and IFly interfaces
+- Amphibian implements swimming method from ISwim interface

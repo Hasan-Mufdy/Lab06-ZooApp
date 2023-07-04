@@ -2,7 +2,7 @@
 
 namespace Animals
 {
-    public class Shark : Fish
+    public class Shark : Fish, ISwim
     {
         public override string Eat()
         {
@@ -21,6 +21,10 @@ namespace Animals
         public override string Swim()
         {
             return "shark is swimming";
+        }
+        public string Swimming()
+        {
+            return "Shark is swimming.";
         }
     }
 }

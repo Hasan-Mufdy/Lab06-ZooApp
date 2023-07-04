@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Animals
 {
-    public class Snake : Reptile
+    public class Snake : Reptile, ISwim,IFly
     {
         public override string Eat()
         {
@@ -21,6 +21,14 @@ namespace Animals
         public override string LayEggs()
         {
             return "Lays eggs on land.";
+        }
+        public string flying()
+        {
+            return "snake cannot fly";
+        }
+        public string Swimming()
+        {
+            return "snake cannot swim";
         }
     }
 }

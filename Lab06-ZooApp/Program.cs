@@ -20,7 +20,22 @@ namespace Animals
             Shark shark = new Shark();
             Console.WriteLine($"Shark: {shark.Eat()}, {shark.Sleep()}, {shark.Sound()}  ");
 
-           
+            Console.WriteLine();
+            //// to test the interfaces:
+            //// (new objects are defined above)
+            Console.WriteLine(((ISwim)dog).Swimming());
+
+            Console.WriteLine(((ISwim)snake).Swimming());
+
+            Console.WriteLine(((ISwim)shark).Swimming());
+
+            Console.WriteLine(((IFly)parrot).flying());
+
+            Console.WriteLine(((ISwim)amphibian).Swimming());
+
+
+
+
         }
     }
 }
